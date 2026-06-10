@@ -24,6 +24,11 @@ public class MainController {
         this.geminiService = geminiService;
         this.jdbcTemplate = jdbcTemplate;
     }
+    @GetMapping("/test")
+    @ResponseBody
+    public String test() {
+        return "Controller OK";
+    }
 
     @GetMapping("/")
     public String home() {
