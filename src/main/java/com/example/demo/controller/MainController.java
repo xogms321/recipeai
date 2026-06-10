@@ -29,6 +29,10 @@ public class MainController {
     public String test() {
         return "Controller OK";
     }
+    @GetMapping("/testview")
+        public String testview() {
+        return "home";
+    }
 
     @GetMapping("/")
     public String home() {
