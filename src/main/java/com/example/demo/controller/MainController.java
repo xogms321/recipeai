@@ -13,6 +13,11 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+@GetMapping("/test")
+@ResponseBody
+public String test() {
+    return "Controller OK";
+}
 
 @Controller
 public class MainController {
